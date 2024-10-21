@@ -1,28 +1,21 @@
-/*header*/
-.Header{
-  background-color: black;
-  color: white;
-  height: 100vh;
-  padding: 5%;
+/*Login*/
+.Login{
+  text-align: center;
+  margin-top: 300px;
 }
-/* About*/
-.About{
-  background-color: aqua;
-  padding: 100px;
-  height: 100vh;
-}
-h1{
+.Login h1{
   text-align: center;
 }
-/*Services*/
-.Service{
-  background-color: rgb(255, 174, 0);
-  padding: 100px;
-  height: 100vh;
+.Login input{
+  border: none;
+  border-bottom: 2px solid black;
 }
-/*Contact*/
-.Contact{
-  background-color: aqua;
-  padding: 100px;
-  height: 100vh;
+/* signup */
+.Signup{
+  text-align: center;
+  margin-top: 300px;
+}
+.Signup input{
+  border: none;
+  border-bottom: 2px solid black;
 }
