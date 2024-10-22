@@ -1,7 +1,9 @@
 /*Login*/
 .Login{
   text-align: center;
-  margin-top: 300px;
+  background-color: #1A1A72;
+  color: white;
+  height: 100vh;
 }
 .Login h1{
   text-align: center;
@@ -18,4 +20,32 @@
 .Signup input{
   border: none;
   border-bottom: 2px solid black;
+}
+/*Header*/
+.Header{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+justify-content: space-around;
+}
+.Header  li{
+  
+  list-style-type: none;
+}
+/*sidenvar*/
+.side{
+  background-color:#262626;
+  color: white;
+  height: 100vh;
+}
+.side ul li{
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+.good{
+  background-color: #141414;
+  height: 100vh;
+  color: white;
 }
