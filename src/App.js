@@ -11,6 +11,7 @@ import Application from './Pages/Application';
 import Messages from './Pages/Messages';
 import Statics from './Pages/Statics';
 import News from './Pages/News';
+import Data from './Pages/Data';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/messages' exact element={<Messages/>}/>
           <Route path='/statics' exact element={<Statics/>}/>
           <Route path='/news' exact element={<News/>}/>
+          <Route path='*' exact element={<Data/>}/>
 
           
         </Routes>

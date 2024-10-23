@@ -64,3 +64,11 @@ justify-content: space-around;
   background-color: #141414;
   color: white;
 }*/
+.nav{
+  color: white;
+}
+/* 404 error */
+.Data h1{
+  text-align: center;
+  margin-top: 300px;
+}

@@ -12,7 +12,7 @@ function News() {
             </Col>
             <Col sm={10}>
             <Header/>
-            hello
+            
             </Col>
         </Row>
     </div>

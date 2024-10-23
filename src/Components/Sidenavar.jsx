@@ -1,19 +1,45 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FaTachometerAlt, FaSearch, FaFileAlt, FaEnvelope, FaChartBar, FaNewspaper } from 'react-icons/fa';
+
 function Sidenavar() {
   return (
-    <div className='side'>
-        <ul>
-           <li>MAIN MENU</li> 
-          <Link to='/Dashboard'><li>Dashboard</li></Link>  
-          <Link to ='/searchjob'><li>Search Job</li></Link>  
-            <li>Application</li>
-            <li>Message</li>
-            <li>Statics</li>
-            <li>News</li>
-        </ul>
+    <div className='side '>
+      <ul>
+        <li>MAIN MENU</li>
+        <li>
+          <NavLink to='/Dashboard' className='nav'>
+            <FaTachometerAlt /> Dashboard
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/searchjob' className='nav'>
+            <FaSearch /> Search Job
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/application' className='nav'>
+            <FaFileAlt /> Application
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/messages'className='nav'>
+            <FaEnvelope /> Messages
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/statics' className='nav'>
+            <FaChartBar /> Stastics
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/news' className='nav'>
+            <FaNewspaper /> News
+          </NavLink>
+        </li>
+      </ul>
     </div>
-  )
+  );
 }
 
-export default Sidenavar
+export default Sidenavar;
