@@ -12,6 +12,7 @@ import Messages from './Pages/Messages';
 import Statics from './Pages/Statics';
 import News from './Pages/News';
 import Data from './Pages/Data';
+import Profile from './Pages/Profile';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path='/statics' exact element={<Statics/>}/>
           <Route path='/news' exact element={<News/>}/>
           <Route path='*' exact element={<Data/>}/>
+          <Route path='/profile' exact element={<Profile/>}/>
+          
 
           
         </Routes>

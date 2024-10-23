@@ -1,11 +1,12 @@
-import * as React from 'react';
-import { AppBar, Box, Toolbar, IconButton, Typography, Badge, InputBase, Avatar } from '@mui/material';
+import React, { useState } from 'react';
+import { AppBar, Box, Toolbar, IconButton, Typography, Badge, InputBase, Avatar, Menu, MenuItem } from '@mui/material';
 import { styled, alpha } from '@mui/material/styles';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SearchIcon from '@mui/icons-material/Search';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import DownloadIcon from '@mui/icons-material/Download';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -46,9 +47,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar() {
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      {/* Apply #141414 background color */}
       <AppBar position="static" sx={{ backgroundColor: '#141414' }}>
         <Toolbar>
           {/* Left Arrow for navigation */}
@@ -80,7 +90,7 @@ export default function Navbar() {
             <Typography variant="h6" noWrap component="div" sx={{ marginRight: 1 }}>
               Get Report
             </Typography>
-            <DownloadIcon />  {/* Download Icon */}
+            <DownloadIcon /> {/* Download Icon */}
           </Box>
 
           {/* Message Icon with badge */}
@@ -97,10 +107,30 @@ export default function Navbar() {
             </Badge>
           </IconButton>
 
-          {/* Profile Image */}
-          <IconButton size="large" edge="end" aria-label="account of current user" color="inherit">
-            <Avatar alt="Profile Image" src="https://i.pinimg.com/736x/30/57/b9/3057b93a8c8b26f0dacfafa3759b1981.jpg" />  {/* Replace with actual image URL */}
+          {/* Profile Image with Menu */}
+          <IconButton size="large" edge="end" aria-label="account of current user" color="inherit" onClick={handleMenuOpen}>
+            <Avatar alt="Profile Image" src="https://i.pinimg.com/736x/30/57/b9/3057b93a8c8b26f0dacfafa3759b1981.jpg" /> {/* Replace with actual image URL */}
           </IconButton>
+
+          {/* Dropdown Menu */}
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorEl}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            open={Boolean(anchorEl)}
+            onClose={handleMenuClose}
+          >
+         <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+            <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
+          </Menu>
         </Toolbar>
       </AppBar>
     </Box>
