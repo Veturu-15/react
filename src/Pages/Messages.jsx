@@ -12,7 +12,7 @@ function Messages() {
             </Col>
             <Col sm={10}>
             <Header/>
-            hello
+            messages
             </Col>
         </Row>
     </div>

@@ -12,7 +12,7 @@ function Statics() {
             </Col>
             <Col sm={10}>
             <Header/>
-            hello
+            statics
             </Col>
         </Row>
     </div>

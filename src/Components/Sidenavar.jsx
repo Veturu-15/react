@@ -39,7 +39,7 @@ function Sidenavar() {
         </li>
         <li>
           <NavLink to='/profile' className='nav' activeClassName='active'>
-            <FaUser /> Profile {/* Profile icon added here */}
+            <FaUser /> Profile 
           </NavLink>
         </li>
       </ul>

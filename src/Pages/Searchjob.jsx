@@ -12,7 +12,7 @@ function Searchjob() {
             </Col>
             <Col sm={10}>
             <Header/>
-            hello
+            Searchjob
             </Col>
         </Row>
     </div>

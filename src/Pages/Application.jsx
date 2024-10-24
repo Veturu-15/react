@@ -13,7 +13,7 @@ function Application() {
         </Col>
         <Col sm={10}>
         <Header/>
-        hello
+        Application
         </Col>
       </Row>
     </div>
