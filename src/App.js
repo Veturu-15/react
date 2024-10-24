@@ -13,6 +13,7 @@ import Statics from './Pages/Statics';
 import News from './Pages/News';
 import Data from './Pages/Data';
 import Profile from './Pages/Profile';
+import  Logout  from './Pages/Logout';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           <Route path='/news' exact element={<News/>}/>
           <Route path='*' exact element={<Data/>}/>
           <Route path='/profile' exact element={<Profile/>}/>
-          
+          <Route path='/logout' exact element={<Logout/>}/>
 
           
         </Routes>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 function Signup() {
   return (
     <div className='Signup'>
+      <div className="card1">
     <h1>Signup</h1> <br /><br />
     <input type="text" placeholder='Name:'/> <br /> <br />
     <input type="email" placeholder='email:' /><br /> <br />
@@ -11,6 +12,7 @@ function Signup() {
      <Link to={'/'}>  <button className='btn btn-primary'>Signup</button></Link> <br /><br />
     <input type="checkbox" id='check' />
     <label id='check'>Remember me</label>
+    </div>
     </div>
   )
 }

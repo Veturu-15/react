@@ -6,7 +6,7 @@ function Sidenavar() {
   return (
     <div className='side'>
       <ul>
-        <li>MAIN MENU</li>
+        <li><h1> Menu</h1></li>
         <li>
           <NavLink to='/Dashboard' className='nav' activeClassName='active'>
             <FaTachometerAlt /> Dashboard
@@ -40,6 +40,11 @@ function Sidenavar() {
         <li>
           <NavLink to='/profile' className='nav' activeClassName='active'>
             <FaUser /> Profile 
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/logout' className='nav' activeClassName='active'>
+            <FaUser /> Logout 
           </NavLink>
         </li>
       </ul>

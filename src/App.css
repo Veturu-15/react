@@ -4,6 +4,9 @@
   background-color: #1A1A72;
   color: white;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Login h1{
   text-align: center;
@@ -12,14 +15,32 @@
   border: none;
   border-bottom: 2px solid black;
 }
+.card {
+  padding: 30px;
+  background-color: #2C2C72;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* signup */
-.Signup{
+.Signup {
   text-align: center;
-  margin-top: 300px;
+  background-color: #1A1A72;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Signup input{
   border: none;
   border-bottom: 2px solid black;
+}
+.card1 {
+  background-color: #2C2C72;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 /*Header*/
 .Header{
@@ -28,11 +49,14 @@
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
-justify-content: space-around;
+  justify-content: space-around;
+  
 }
 .Header  li{
-  
   list-style-type: none;
+}
+.new{
+  color: white;
 }
 /*sidenvar*/
 .side{
@@ -40,6 +64,12 @@ justify-content: space-around;
   color: white;
   height: 100vh;
 }
+/*.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16%;
+}*/
 .side ul li{
   list-style-type: none;
   margin-bottom: 50px;

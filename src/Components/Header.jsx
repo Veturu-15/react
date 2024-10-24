@@ -6,6 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import DownloadIcon from '@mui/icons-material/Download';
+import { Link } from 'react-router-dom';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -94,22 +95,24 @@ export default function Navbar() {
           </Box>
 
           {/* Message Icon with badge */}
+          <Link to={'/messages'} className='new' >
           <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-            <Badge badgeContent={4} color="error">
+            <Badge badgeContent={0} color="error">
               <MailIcon />
             </Badge>
-          </IconButton>
+          </IconButton></Link>
 
           {/* Alert Icon with badge */}
           <IconButton size="large" aria-label="show 17 new notifications" color="inherit">
-            <Badge badgeContent={17} color="error">
+            <Badge badgeContent={0} color="error">
               <NotificationsIcon />
             </Badge>
           </IconButton>
 
           {/* Profile Image with Menu */}
           <IconButton size="large" edge="end" aria-label="account of current user" color="inherit" onClick={handleMenuOpen}>
-            <Avatar alt="Profile Image" src="https://i.pinimg.com/736x/30/57/b9/3057b93a8c8b26f0dacfafa3759b1981.jpg" /> {/* Replace with actual image URL */}
+            <Avatar alt="Profile Image" src="https://i.pinimg.com/736x/30/57/b9/3057b93a8c8b26f0dacfafa3759b1981.jpg" />
+            pspk {/* Replace with actual image URL */}
           </IconButton>
 
           {/* Dropdown Menu */}
@@ -128,8 +131,8 @@ export default function Navbar() {
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
           >
-         <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
+      <Link to={'/profile'}><MenuItem onClick={handleMenuClose}>Profile</MenuItem></Link>   
+          <Link to={'/logout'}><MenuItem onClick={handleMenuClose}>Logout</MenuItem> </Link>  
           </Menu>
         </Toolbar>
       </AppBar>
