@@ -3,7 +3,6 @@ import  Col  from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Sidenavar from '../Components/Sidenavar';
 import Header from '../Components/Header';
-import Good from '../Components/Good';
 function Dashboard() {
   return (
     <div className='Dashboard'>
@@ -13,7 +12,7 @@ function Dashboard() {
       </Col>
       <Col sm={10}>
       <Header/>
-      <Good/>
+      hello
       </Col>
       </Row>
       </div>

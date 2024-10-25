@@ -9,6 +9,7 @@ export const Laptop = [
         CPUModel:	"Intel Core i5",
         RAMMemoryInstalledSize:	"16 GB",
         Image:"https://m.media-amazon.com/images/I/61TIgpyjxPL._SX569_.jpg",
+        price:45000,
     },
     {
         id:2,
@@ -20,6 +21,7 @@ export const Laptop = [
         CPUModel:	"Intel Core i5",
         RAMMemoryInstalledSize:	"16 GB",
         Image:"https://m.media-amazon.com/images/I/71czGb00k5L._SX569_.jpg",
+        price:35000,
     },
     {
         id:3,
@@ -31,6 +33,7 @@ export const Laptop = [
         CPUModel:	"Intel Core i5",
         RAMMemoryInstalledSize:	"16 GB",
         Image:"https://m.media-amazon.com/images/I/61-Y-eWXqtL._SX569_.jpg",
+        price:65000,
     },
     {
         id:4,
@@ -42,6 +45,7 @@ export const Laptop = [
         CPUModel:	"Intel Core i5",
         RAMMemoryInstalledSize:	"16 GB",
         Image:"https://m.media-amazon.com/images/I/61-Y-eWXqtL._SX569_.jpg",
+        price:25000,
     },
     {
         id:5,
@@ -53,6 +57,7 @@ export const Laptop = [
         CPUModel:	"Intel Core i5",
         RAMMemoryInstalledSize:	"16 GB",
         Image:"https://m.media-amazon.com/images/I/61TIgpyjxPL._SX569_.jpg",
+        price:55000,
     },
     {
         id:6,
@@ -64,6 +69,7 @@ export const Laptop = [
         CPUModel:	"Intel Core i5",
         RAMMemoryInstalledSize:	"16 GB",
         Image:"https://m.media-amazon.com/images/I/71czGb00k5L._SX569_.jpg",
+        price:35000,
     },
     {
         id:7,
@@ -75,6 +81,7 @@ export const Laptop = [
         CPUModel:	"Intel Core i5",
         RAMMemoryInstalledSize:	"16 GB",
         Image:"https://m.media-amazon.com/images/I/61-Y-eWXqtL._SX569_.jpg",
+        price:75000,
     },
 ];
 export default Laptop;

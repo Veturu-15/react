@@ -50,7 +50,6 @@
   flex-wrap: wrap;
   padding: 2%;
   justify-content: space-around;
-  
 }
 .Header  li{
   list-style-type: none;
@@ -62,7 +61,9 @@
 .side{
   background-color:#262626;
   color: white;
-  height: 100vh;
+  height: 100%;
+  position: fixed;
+
 }
 /*.menu{
   position: fixed;
@@ -101,4 +102,21 @@
 .Data h1{
   text-align: center;
   margin-top: 300px;
+}
+.mobile{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+.mobile img{
+  height: 500px;
+  width: 500px;
+}
+.ref{
+  display: flex;
+  flex-wrap: wrap;  
+}
+.ref img{
+  height: 800px;
+  width: 500px;
 }

@@ -44,7 +44,7 @@ export const Earbuds=[
         FormFactor:	"In Ear",
         Headphones:' Jack	USB',
         ModelName:	"Airdopes 311 Pro",
-        images:"https://m.media-amazon.com/images/I/614gbl-O98L._AC_UY218_.jpg",
+        imgaes:"https://m.media-amazon.com/images/I/614gbl-O98L._AC_UY218_.jpg",
         price:900,
     },
     {
@@ -54,7 +54,7 @@ export const Earbuds=[
         EarPlacement:	"In Ear",
         FormFactor:"In Ear",
         NoiseControl:"Passive Noise Cancellation, Sound Isolation",	
-        images:"https://m.media-amazon.com/images/I/71W62XSibTL._SX569_.jpg",
+        imgaes:"https://m.media-amazon.com/images/I/71W62XSibTL._SX569_.jpg",
         price:900,
     },
     {
@@ -63,7 +63,7 @@ export const Earbuds=[
         Colour:	"Green",
         EarPlacement:	"In Ear",
         FormFactor:"In Ear",
-        images:"https://m.media-amazon.com/images/I/51ZKbg507lL._AC_UY218_.jpg",
+        imgaes:"https://m.media-amazon.com/images/I/41APtEVPNEL._SX300_SY300_QL70_FMwebp_.jpg",
         price:600,
     },
 ]

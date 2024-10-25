@@ -2,7 +2,8 @@ import React from 'react';
 import Sidenavar from '../Components/Sidenavar';
 import  Col  from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Header from '../Components/Header'
+import Header from '../Components/Header';
+import Newref from '../Pages/Newref';
 function News() {
   return (
     <div className='Refrigerator'>
@@ -12,7 +13,7 @@ function News() {
             </Col>
             <Col sm={10}>
             <Header/>
-            Refrigerator
+           <Newref/>
             </Col>
         </Row>
     </div>

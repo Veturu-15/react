@@ -4,6 +4,7 @@ import  Col  from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Header from '../Components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Newlaptop from '../Pages/Newlaptop';
 function Application() {
   return (
     <div className='laptop'>
@@ -13,7 +14,7 @@ function Application() {
         </Col>
         <Col sm={10}>
         <Header/>
-       Laptop
+        <Newlaptop />
         </Col>
       </Row>
     </div>

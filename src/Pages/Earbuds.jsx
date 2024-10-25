@@ -2,7 +2,8 @@ import React from 'react';
 import Sidenavar from '../Components/Sidenavar';
 import  Col  from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Header from '../Components/Header'
+import Header from '../Components/Header';
+import Newearbuds from '../Pages/Newearbuds';
 function Messages() {
   return (
     <div className='earbuds'>
@@ -12,7 +13,7 @@ function Messages() {
             </Col>
             <Col sm={10}>
             <Header/>
-            Earbuds
+            <Newearbuds />
             </Col>
         </Row>
     </div>
