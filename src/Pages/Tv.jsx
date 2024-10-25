@@ -3,20 +3,20 @@ import Sidenavar from '../Components/Sidenavar';
 import  Col  from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Header from '../Components/Header'
-function Messages() {
+function Statics() {
   return (
-    <div className='messages'>
+    <div className='tv'>
         <Row>
             <Col sm={2}>
             <Sidenavar/>
             </Col>
             <Col sm={10}>
             <Header/>
-            messages
+            Tv
             </Col>
         </Row>
     </div>
   )
 }
 
-export default Messages
+export default Statics

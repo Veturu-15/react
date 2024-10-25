@@ -6,14 +6,14 @@ import Header from '../Components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function Application() {
   return (
-    <div className='Application'>
+    <div className='laptop'>
       <Row>
         <Col sm={2}>
         <Sidenavar/>
         </Col>
         <Col sm={10}>
         <Header/>
-        Application
+       Laptop
         </Col>
       </Row>
     </div>

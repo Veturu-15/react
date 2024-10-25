@@ -1,50 +1,54 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaTachometerAlt, FaSearch, FaFileAlt, FaEnvelope, FaChartBar, FaNewspaper, FaUser } from 'react-icons/fa'; // Import FaUser for Profile
+import { FaTachometerAlt, FaMobileAlt, FaTv } from "react-icons/fa";
+import { IoMdLaptop, IoIosLogOut } from "react-icons/io";
+import { BsEarbuds } from "react-icons/bs";
+import { CgSmartHomeRefrigerator } from "react-icons/cg";
+import { ImProfile } from "react-icons/im";
 
 function Sidenavar() {
   return (
     <div className='side'>
       <ul>
-        <li><h1> Menu</h1></li>
+        <li><h1>Menu</h1></li>
         <li>
-          <NavLink to='/Dashboard' className='nav' activeClassName='active'>
+          <NavLink to='/Dashboard' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
             <FaTachometerAlt /> Dashboard
           </NavLink>
         </li>
         <li>
-          <NavLink to='/searchjob' className='nav' activeClassName='active'>
-            <FaSearch /> Search Job
+          <NavLink to='/mobile' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+            <FaMobileAlt /> Mobile
           </NavLink>
         </li>
         <li>
-          <NavLink to='/application' className='nav' activeClassName='active'>
-            <FaFileAlt /> Application
+          <NavLink to='/laptop' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+            <IoMdLaptop /> Laptop
           </NavLink>
         </li>
         <li>
-          <NavLink to='/messages' className='nav' activeClassName='active'>
-            <FaEnvelope /> Messages
+          <NavLink to='/earbuds' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+            <BsEarbuds /> Earbuds
           </NavLink>
         </li>
         <li>
-          <NavLink to='/statics' className='nav' activeClassName='active'>
-            <FaChartBar /> Statistics
+          <NavLink to='/tv' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+            <FaTv /> TV
           </NavLink>
         </li>
         <li>
-          <NavLink to='/news' className='nav' activeClassName='active'>
-            <FaNewspaper /> News
+          <NavLink to='/ref' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+            <CgSmartHomeRefrigerator /> Refrigerator
           </NavLink>
         </li>
         <li>
-          <NavLink to='/profile' className='nav' activeClassName='active'>
-            <FaUser /> Profile 
+          <NavLink to='/profile' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+            <ImProfile /> Profile
           </NavLink>
         </li>
         <li>
-          <NavLink to='/logout' className='nav' activeClassName='active'>
-            <FaUser /> Logout 
+          <NavLink to='/logout' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+            <IoIosLogOut /> Logout
           </NavLink>
         </li>
       </ul>
