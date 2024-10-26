@@ -1,141 +1,83 @@
 import React, { useState } from 'react';
-import { AppBar, Box, Toolbar, IconButton, Typography, Badge, InputBase, Avatar, Menu, MenuItem } from '@mui/material';
-import { styled, alpha } from '@mui/material/styles';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { AppBar, Toolbar, Typography, InputBase, IconButton, Menu, MenuItem, Badge, Avatar, Box, Button } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import DownloadIcon from '@mui/icons-material/Download';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 
-
-const Search = styled('div')(({ theme }) => ({
-  position: 'relative',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(1),
-    width: 'auto',
-  },
-}));
-
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
-  '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
-}));
-
-export default function Navbar() {
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
+function Header() {
+  const [profileAnchorEl, setProfileAnchorEl] = useState(null);
+  const [categoryAnchorEl, setCategoryAnchorEl] = useState(null); // State for category menu
+  const [cartCount] = useState(0); // Dynamic count for items in cart
+  
+  const handleProfileMenu = (event) => setProfileAnchorEl(event.currentTarget);
+  const handleCategoryMenu = (event) => setCategoryAnchorEl(event.currentTarget); // Open category menu
+  const closeMenu = () => {
+    setProfileAnchorEl(null);
+    setCategoryAnchorEl(null); // Close category menu
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#141414' }}>
-        <Toolbar>
-          {/* Left Arrow for navigation */}
-          <IconButton size="large" edge="start" color="inherit" aria-label="back">
-            <ArrowBackIcon />
-          </IconButton>
-
-          {/* Detailed Analytics Text */}
-          <Typography variant="h6" noWrap component="div" sx={{ display: { xs: 'none', sm: 'block' } }}>
-            Detailed Analytics
+    <>
+      {/* AppBar with fixed position */}
+      <AppBar position="fixed" sx={{ backgroundColor: '#262626' }}>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          {/* Logo/First Text */}
+          <Typography variant="h6" sx={{ flexGrow: 1 }}>
+            e-commerce
           </Typography>
 
-          {/* Spacer to push elements to the right */}
-          <Box sx={{ flexGrow: 1 }} />
+          {/* Category Button with Dropdown */}
+          <Button color="inherit" onClick={handleCategoryMenu}>
+            Category
+          </Button>
+          <Menu anchorEl={categoryAnchorEl} open={Boolean(categoryAnchorEl)} onClose={closeMenu}>
+            {/* Links to category pages */}
+            <MenuItem component={Link} to="/mobile" onClick={closeMenu}>Mobile</MenuItem>
+            <MenuItem component={Link} to="/laptop" onClick={closeMenu}>Laptop</MenuItem>
+            <MenuItem component={Link} to="/earbuds" onClick={closeMenu}>Earbuds</MenuItem>
+            <MenuItem component={Link} to="/tv" onClick={closeMenu}>TV</MenuItem>
+            <MenuItem component={Link} to="/ref" onClick={closeMenu}>Refrigerator</MenuItem>
+            
+            
+          </Menu>
 
-          {/* Center Search */}
-          <Search sx={{ margin: '0 auto' }}>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} />
-          </Search>
-
-          {/* Spacer to push elements to the right */}
-          <Box sx={{ flexGrow: 1 }} />
-
-          {/* Get Report with Download Icon */}
-          <Box sx={{ display: 'flex', alignItems: 'center', marginRight: 2 }}>
-            <Typography variant="h6" noWrap component="div" sx={{ marginRight: 1 }}>
-              Get Report
-            </Typography>
-            <DownloadIcon /> {/* Download Icon */}
+          {/* Centered Search Bar */}
+          <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+            <div style={{ position: 'relative', backgroundColor: '#ccc', borderRadius: 4, width: 'auto', maxWidth: '400px' }}>
+              <SearchIcon style={{ position: 'absolute', left: 8, top: '50%', transform: 'translateY(-50%)' }} />
+              <InputBase placeholder="Search…" style={{ paddingLeft: 32, width: '100%' }} />
+            </div>
           </Box>
 
-          {/* Message Icon with badge */}
-          <Link to={'/messages'} className='new' >
-          <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-            <Badge badgeContent={0} color="error">
-              <MailIcon />
-            </Badge>
-          </IconButton></Link>
+          {/* Cart Button */}
+          <Link to='/' className='new'>
+            <IconButton color="inherit">
+              <Badge badgeContent={cartCount} color="error">
+                <ShoppingCartIcon />
+              </Badge>
+            </IconButton>
+          </Link>
 
-          {/* Alert Icon with badge */}
-          <IconButton size="large" aria-label="show 17 new notifications" color="inherit">
-            <Badge badgeContent={0} color="error">
-              <NotificationsIcon />
-            </Badge>
+          {/* Profile Avatar */}
+          <IconButton color="inherit" onClick={handleProfileMenu}>
+            <Avatar src="https://i.pinimg.com/736x/30/57/b9/3057b93a8c8b26f0dacfafa3759b1981.jpg" />
           </IconButton>
-
-          {/* Profile Image with Menu */}
-          <IconButton size="large" edge="end" aria-label="account of current user" color="inherit" onClick={handleMenuOpen}>
-            <Avatar alt="Profile Image" src="https://i.pinimg.com/736x/30/57/b9/3057b93a8c8b26f0dacfafa3759b1981.jpg" />
-            pspk {/* Replace with actual image URL */}
-          </IconButton>
-
-          {/* Dropdown Menu */}
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorEl}
-            anchorOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-          >
-      <Link to={'/profile'}><MenuItem onClick={handleMenuClose}>Profile</MenuItem></Link>   
-          <Link to={'/logout'}><MenuItem onClick={handleMenuClose}>Logout</MenuItem> </Link>  
+          <Menu anchorEl={profileAnchorEl} open={Boolean(profileAnchorEl)} onClose={closeMenu}>
+            <Link to='/profile'>
+              <MenuItem onClick={closeMenu}>Profile</MenuItem>
+            </Link>
+            <Link to='/'>
+              <MenuItem onClick={closeMenu}>Logout</MenuItem>
+            </Link>
           </Menu>
         </Toolbar>
       </AppBar>
-    </Box>
+
+      {/* Box for main content with padding to avoid overlap */}
+      <Box sx={{ paddingTop: '64px' }}>
+      </Box>
+    </>
   );
 }
+
+export default Header;

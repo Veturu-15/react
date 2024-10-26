@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaTachometerAlt, FaMobileAlt, FaTv } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 import { IoMdLaptop, IoIosLogOut } from "react-icons/io";
 import { BsEarbuds } from "react-icons/bs";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";
@@ -42,12 +43,17 @@ function Sidenavar() {
           </NavLink>
         </li>
         <li>
+          <NavLink to='/' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+          <FaShoppingCart />Add  to Cart
+          </NavLink>
+        </li>
+        <li>
           <NavLink to='/profile' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
             <ImProfile /> Profile
           </NavLink>
         </li>
         <li>
-          <NavLink to='/logout' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+          <NavLink to='/' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
             <IoIosLogOut /> Logout
           </NavLink>
         </li>

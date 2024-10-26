@@ -43,17 +43,7 @@
   width: 300px;
 }
 /*Header*/
-.Header{
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2%;
-  justify-content: space-around;
-}
-.Header  li{
-  list-style-type: none;
-}
+
 .new{
   color: white;
 }
