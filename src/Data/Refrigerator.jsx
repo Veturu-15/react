@@ -68,4 +68,5 @@ export const ref=[
         images:"https://m.media-amazon.com/images/I/31Lkg1NtbvL._SY445_SX342_QL70_FMwebp_.jpg",
         price:25350,
     },
-]
+];
+export default ref;

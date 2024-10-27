@@ -110,3 +110,43 @@
   height: 800px;
   width: 500px;
 }
+/*Dashboard*/
+.SliceMobile{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  border: solid #141414;
+}
+.SliceMobile img{
+  height: 200px;
+  width: 350px;
+}
+.SliceMobile button{
+  margin: 50px;
+}
+.SliceLaptop{
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #141414;
+  margin-top:30px ;
+}
+.SliceLaptop img{
+  height: 300px;
+  width: 350px;
+}
+.SliceLaptop button{
+  margin: 50px;
+}
+.SliceEarbuds{
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #141414;
+  margin-top:30px ;
+}
+.SliceEarbuds img{
+  height: 300px;
+  width: 350px;
+}
+.SliceEarbuds button{
+  margin: 50px; 
+}

@@ -4,6 +4,7 @@ export const Mobile = [
         title: "iphone",  
         price: 12000,
         Image:'https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg',
+        
     },
     {
         id: 2,

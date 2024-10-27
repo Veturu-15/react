@@ -77,4 +77,5 @@
         images:"https://m.media-amazon.com/images/I/51mTQTu2bEL._SX522_.jpg",
         price:45000,
     },
-]
+];
+export default Tv;

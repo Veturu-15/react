@@ -66,4 +66,5 @@ export const Earbuds=[
         imgaes:"https://m.media-amazon.com/images/I/41APtEVPNEL._SX300_SY300_QL70_FMwebp_.jpg",
         price:600,
     },
-]
+];
+export default Earbuds; 

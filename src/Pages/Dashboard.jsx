@@ -3,6 +3,9 @@ import  Col  from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Sidenavar from '../Components/Sidenavar';
 import Header from '../Components/Header';
+import Slicemobile from '../Slice/Slicemobile';
+import Slicelaptop from '../Slice/Slicelaptop';
+import Sliceear from '../Slice/Sliceear'; 
 function Dashboard() {
   return (
     <div className='Dashboard'>
@@ -12,7 +15,9 @@ function Dashboard() {
       </Col>
       <Col sm={10}>
       <Header/>
-      hello
+      <Slicemobile/>
+      <Slicelaptop/>
+      <Sliceear/>
       </Col>
       </Row>
       </div>
