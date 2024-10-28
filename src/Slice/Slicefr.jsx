@@ -23,7 +23,6 @@ const RefrigeratorList = () => {
           />
           <p>Capacity: {refrigerator.Capacity}</p>
           <p>Energy Star Rating: {refrigerator.EnergyStar}</p>
-          <p>Price: ₹{refrigerator.price}</p>
         </div>
       ))}
       <Link to='/refrigerators'>

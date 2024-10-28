@@ -12,7 +12,6 @@ const LaptopList = () => {
         <div key={laptop.id}>
           <h3>{laptop.title}</h3>
           <img src={laptop.Image} alt={laptop.title} />
-          <p>Price: {laptop.price}</p>
         </div>
       ))}
       <Link to='/laptop'>

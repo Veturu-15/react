@@ -12,7 +12,17 @@ function profile() {
             </Col>
             <Col sm={10}>
             <Header/>
-            profile
+            <Col s></Col>
+            <div className='profie'>
+            <p>Name:</p>
+            <input type="text" placeholder='Enter the name: ' />
+            <p>Email:</p>
+            <input type="text" placeholder='Enter the e-mail id:' />
+            <p>Password:</p>
+            <input type="password" placeholder='Enter the password:' />
+            <br /> <br />
+            <button className='btn btn-primary'>Submit</button>
+            </div>
             </Col>
         </Row>
     </div>

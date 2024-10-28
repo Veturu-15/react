@@ -13,7 +13,6 @@ const EarbudsList = () => {
           <h3>{earbud.Brand}</h3>
           <img src={earbud.imgaes} alt={earbud.Brand} />
           <p>Color: {earbud.Colour}</p>
-          <p>Price: {earbud.price}</p>
         </div>
       ))}
       <Link to='/earbuds'>
