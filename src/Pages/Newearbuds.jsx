@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 function EarbudsList() {
     return (
-        <Link to='/earbuds/:id'>
+        <Link to='/earbuds/:id' style={{ textDecoration: 'none', color: 'black' }}>
         <div className='earbuds' style={{display:'flex', flexWrap:'wrap',gap:'3%',padding:'3px'}}>
             {EarbudsData.map((item) => (
                 <div className='new'  style={{border:'2px solid black', margin:'10px', color:'black'}}> 

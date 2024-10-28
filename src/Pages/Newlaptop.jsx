@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function LaptopList() {
     return (
-        <Link to='/laptop/:id'>
+        <Link to='/laptop/:id'style={{ textDecoration: 'none', color: 'black' }}>
         <div className='laptop'style={{display:'flex', flexWrap:'wrap',gap:'3%',padding:'3px'}}>
             {LaptopData.map((item) => (
                 <div className='new'  style={{border:'2px solid black', margin:'10px', color:'black'}}>

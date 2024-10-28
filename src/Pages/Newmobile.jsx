@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 function MobileList() {
     return (
-        <Link to='/mobile/:id'>
+        <Link to='/mobile/:id' style={{ textDecoration: 'none', color: 'black' }}>
         <div className='mobile' style={{display:'flex', flexWrap:'wrap',gap:'3%',padding:'3px'}}>
             {MobileData.map((item) => (
                 <div className='new'  style={{border:'2px solid black', margin:'10px'}}>
