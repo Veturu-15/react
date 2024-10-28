@@ -6,6 +6,8 @@ import Header from '../Components/Header';
 import Slicemobile from '../Slice/Slicemobile';
 import Slicelaptop from '../Slice/Slicelaptop';
 import Sliceear from '../Slice/Sliceear'; 
+import Slicetv from '../Slice/Slicetv';
+import Slicefr from '../Slice/Slicefr';
 function Dashboard() {
   return (
     <div className='Dashboard'>
@@ -18,6 +20,8 @@ function Dashboard() {
       <Slicemobile/>
       <Slicelaptop/>
       <Sliceear/>
+      <Slicefr/>
+      <Slicetv/>
       </Col>
       </Row>
       </div>

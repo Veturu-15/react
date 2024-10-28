@@ -1,5 +1,6 @@
 import React from 'react';
 import { Laptop as LaptopData } from '../Data/Laptop';
+import { Button } from 'react-bootstrap';
 
 function LaptopList() {
     return (
@@ -16,6 +17,9 @@ function LaptopList() {
                     <p>CPUModel:{item.CPUModel}</p>
                     <p>RAMMemoryInstalledSize:{item.RAMMemoryInstalledSize}</p>
                     <p>Price: {item.price}</p>
+                    <Button className='btn btn-warning'>
+                        Add to cart
+                    </Button>
                 </div>
             ))}
         </div>

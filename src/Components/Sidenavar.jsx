@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaTachometerAlt, FaMobileAlt, FaTv } from "react-icons/fa";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaTachometerAlt, FaMobileAlt, FaTv, FaShoppingCart } from "react-icons/fa";
 import { IoMdLaptop, IoIosLogOut } from "react-icons/io";
 import { BsEarbuds } from "react-icons/bs";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";

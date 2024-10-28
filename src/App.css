@@ -119,7 +119,7 @@
 }
 .SliceMobile img{
   height: 200px;
-  width: 350px;
+  width: 250px;
 }
 .SliceMobile button{
   margin: 50px;
@@ -132,7 +132,7 @@
 }
 .SliceLaptop img{
   height: 300px;
-  width: 350px;
+  width: 250px;
 }
 .SliceLaptop button{
   margin: 50px;
@@ -145,8 +145,36 @@
 }
 .SliceEarbuds img{
   height: 300px;
-  width: 350px;
+  width: 250px;
 }
 .SliceEarbuds button{
+  margin: 50px; 
+}
+.SliceRefrigerators{
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #141414;
+  margin-top:30px ;
+  
+}
+.SliceRefrigerators img{
+  height: 500px;
+  width: 250px;
+  
+}
+.SliceRefrigerators button{
+  margin: 50px; 
+}
+.SliceTv{
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #141414;
+  margin-top:30px ;
+}
+.SliceTv img{
+  height: 300px;
+  width: 250px;
+}
+.SliceTv button{
   margin: 50px; 
 }

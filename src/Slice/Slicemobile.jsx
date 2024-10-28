@@ -9,10 +9,11 @@ const MobileList = () => {
   return (
     <div className='SliceMobile'>
       {displayedMobiles.map((mobile) => (
-        <div key={mobile.id}>
+        <div>
           <h3>{mobile.title}</h3>
           <img src={mobile.Image} alt={mobile.title} />
           <p>Price: {mobile.price}</p>
+         
         </div>
       ))}
       <Link to='/mobile'>
