@@ -8,8 +8,10 @@ import Slicelaptop from '../Slice/Slicelaptop';
 import Sliceear from '../Slice/Sliceear'; 
 import Slicetv from '../Slice/Slicetv';
 import Slicefr from '../Slice/Slicefr';
+
 function Dashboard() {
   return (
+   <div className='container-fluid'>
     <div className='Dashboard'>
       <Row>
       <Col sm={2}>
@@ -24,6 +26,7 @@ function Dashboard() {
       <Slicetv/>
       </Col>
       </Row>
+      </div>
       </div>
   )
 }

@@ -1,33 +1,30 @@
 import React from 'react';
-import { ref } from '../Data/Refrigerator'; // Make sure 'ref' is properly imported
+import { ref } from '../Data/Refrigerator'; 
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+
 
 const RefrigeratorList = () => {
-  // Check if ref is defined and has items
-  if (!ref || ref.length === 0) {
-    return <p>No refrigerators available.</p>;
-  }
-
   const displayedRefrigerators = ref.slice(0, 3);
 
   return (
-    <div className='SliceRefrigerators'>
+    <div className='SliceRefrigerators'style={{justifyContent:'space-around'}}>
       {displayedRefrigerators.map((refrigerator) => (
-        <div key={refrigerator.id} className="refrigerator-item">
+        <div  className="refrigerator-item">
           <h3>{refrigerator.Brand}</h3>
           <img 
             src={refrigerator.images} 
-            alt={`${refrigerator.Brand} Refrigerator`} 
+            alt={`${refrigerator.Brand} Refrigerator ` } 
             className="refrigerator-image" 
           />
           <p>Capacity: {refrigerator.Capacity}</p>
           <p>Energy Star Rating: {refrigerator.EnergyStar}</p>
         </div>
       ))}
+      <div style={{justifyContent:'end', marginTop:'460px'}}>
       <Link to='/refrigerators'>
-        <Button variant="primary">View All</Button>
-      </Link>  
+        View All
+      </Link> 
+      </div> 
     </div>
   );
 };

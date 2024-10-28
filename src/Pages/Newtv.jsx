@@ -1,12 +1,14 @@
 import React from 'react';
 import { Tv as TvData } from '../Data/Tv';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 function MobileList() {
     return (
-        <div className='mobile'>
+        <Link to='/tv/:id'>
+        <div className='tv'style={{display:'flex', flexWrap:'wrap',gap:'3%',padding:'3px'}}>
             {TvData.map((item) => (
-                <div >
-                    <img src={item.images} alt='' />
+                <div className='new' style={{border:'2px solid black', margin:'10px', color:'black'}} >
+                    <img src={item.images} alt='' style={{height:'350px', width:'300px'}} />
                     <h2>Brand: {item.Brand}</h2>
                     <p>DisplayTechnology:{item.DisplayTechnology}</p>
                     <p>Resolution:{item.Resolution}</p>
@@ -20,6 +22,7 @@ function MobileList() {
                 </div>
             ))}
         </div>
+        </Link>
     );
 }
 

@@ -6,6 +6,7 @@ import Header from '../Components/Header';
 import Newearbuds from '../Pages/Newearbuds';
 function Messages() {
   return (
+    <div className='container-fluid'>
     <div className='earbuds'>
         <Row>
             <Col sm={2}>
@@ -16,6 +17,7 @@ function Messages() {
             <Newearbuds />
             </Col>
         </Row>
+    </div>
     </div>
   )
 }

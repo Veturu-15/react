@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Newlaptop from '../Pages/Newlaptop';
 function Application() {
   return (
+    <div className='container-fluid'>
     <div className='laptop'>
       <Row>
         <Col sm={2}>
@@ -17,6 +18,7 @@ function Application() {
         <Newlaptop />
         </Col>
       </Row>
+    </div>
     </div>
   )
 }

@@ -1,23 +1,25 @@
 import React from 'react';
-import Earbuds from '../Data/Earbuds'; // Adjust the path as needed
+import Earbuds from '../Data/Earbuds'; 
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+
 
 const EarbudsList = () => {
   const displayedEarbuds = Earbuds.slice(0, 3);
 
   return (
-    <div className='SliceEarbuds'>
+    <div className='SliceEarbuds' style={{justifyContent:'space-around'}}>
       {displayedEarbuds.map((earbud) => (
         <div >
           <h3>{earbud.Brand}</h3>
-          <img src={earbud.imgaes} alt={earbud.Brand} />
+          <img src={earbud.imgaes} alt={earbud.Brand} style={{height:'200px', width:'200px'}} />
           <p>Color: {earbud.Colour}</p>
         </div>
       ))}
+      <div style={{justifyContent:'end', marginTop:'160px'}}>
       <Link to='/earbuds'>
-        <Button>View All</Button>
+        View All
       </Link>
+      </div>
     </div>
   );
 };

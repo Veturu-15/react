@@ -7,18 +7,17 @@ const MobileList = () => {
   const displayedMobiles = Mobile.slice(0, 3);
 
   return (
-    <div className='SliceMobile'>
+    <div className='SliceMobile' style={{justifyContent:'space-around'}}>
       {displayedMobiles.map((mobile) => (
         <div>
           <h3>{mobile.title}</h3>
-          <img src={mobile.Image} alt={mobile.title} />
+          <img src={mobile.Image} alt={mobile.title} style={{height:'200px', width:'200px'}} />
          
         </div>
       ))}
-      <div ><Link to='/mobile'>
+      <div style={{justifyContent:'end', marginTop:'160px'}}><Link to='/mobile'>
         View All
       </Link></div>
-        
     </div>
   );
 };

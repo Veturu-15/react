@@ -6,6 +6,7 @@ import Header from '../Components/Header';
 import Newref from '../Pages/Newref';
 function News() {
   return (
+    <div className='container-fluid'>
     <div className='Refrigerator'>
         <Row>
             <Col sm={2}>
@@ -16,6 +17,7 @@ function News() {
            <Newref/>
             </Col>
         </Row>
+    </div>
     </div>
   )
 }

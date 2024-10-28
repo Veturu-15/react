@@ -12,7 +12,12 @@ import Logout from './Pages/Logout';
 import Laptop from './Pages/Laptop';
 import Tv from './Pages/Tv';
 import Refrigerator from './Pages/Refrigerator';
-import Data from './Pages/Data'; // Assuming you create this component
+import Data from './Pages/Data'; 
+import Mobiledetails from './Pages/Details/Mobiledetails';
+import Laptopdetails from './Pages/Details/Laptopdetails';
+import Eardetails from './Pages/Details/Eardetails';
+import Tvdetails from './Pages/Details/Tvdetails';
+import Refdetails from './Pages/Details/Refdetails';
 
 function App() {
   return (
@@ -23,10 +28,15 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/mobile' element={<Mobile />} />
+          <Route path='/mobile/:id' element={<Mobiledetails />} />
           <Route path='/laptop' element={<Laptop />} />
+          <Route path='/laptop/:id' element={<Laptopdetails />} />
           <Route path='/earbuds' element={<Earbuds />} />
+          <Route path='/earbuds/:id' element={<Eardetails />} />
           <Route path='/tv' element={<Tv />} />
+          <Route path='/tv/:id' element={<Tvdetails />} />
           <Route path='/ref' element={<Refrigerator />} />
+          <Route path='/ref/:id' element={<Refdetails />}/>
           <Route path='/profile' element={<Profile />} />
           <Route path='/logout' element={<Logout />} />
           <Route path='*' element={<Data />} />

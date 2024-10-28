@@ -6,7 +6,7 @@ import Header from '../Components/Header';
 import Newmobile from '../Pages/Newmobile';
 function Searchjob() {
   return (
-    <div>
+    <div className='container-fluid'>
         <Row>
             <Col sm={2}>
             <Sidenavar/>

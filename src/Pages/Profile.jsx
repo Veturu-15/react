@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Header from '../Components/Header';
 function profile() {
   return (
+    <div className='container-fluid'>
     <div className='search'>
         <Row>
             <Col sm={2}>
@@ -25,6 +26,7 @@ function profile() {
             </div>
             </Col>
         </Row>
+    </div>
     </div>
   )
 }

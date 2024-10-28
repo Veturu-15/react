@@ -6,6 +6,7 @@ import Header from '../Components/Header';
 import Newtv from '../Pages/Newtv';
 function Statics() {
   return (
+    <div className='container-fluid'>
     <div className='tv'>
         <Row>
             <Col sm={2}>
@@ -16,6 +17,7 @@ function Statics() {
           <Newtv/>
             </Col>
         </Row>
+    </div>
     </div>
   )
 }

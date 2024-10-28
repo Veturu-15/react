@@ -1,22 +1,24 @@
 import React from 'react';
 import Laptop from '../Data/Laptop'; 
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 
 const LaptopList = () => {
   const displayedLaptop = Laptop.slice(0, 3);
 
   return (
-    <div className='SliceLaptop'>
+    <div className='SliceLaptop' style={{justifyContent:'space-around'}}>
       {displayedLaptop.map((laptop) => (
         <div key={laptop.id}>
-          <h3>{laptop.title}</h3>
-          <img src={laptop.Image} alt={laptop.title} />
+          <h3>{laptop.Brand}</h3>
+          <img src={laptop.Image} alt={laptop.title} style={{height:'400px', width:'300px'}} />
         </div>
       ))}
+      <div style={{justifyContent:'end', marginTop:'260px'}}>
       <Link to='/laptop'>
-        <Button>View All</Button>
+        View All
       </Link>  
+      </div>
+      
     </div>
   );
 };
