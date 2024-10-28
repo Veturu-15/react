@@ -7,6 +7,7 @@ const RefrigeratorList = () => {
   const displayedRefrigerators = ref.slice(0, 3);
 
   return (
+    <Link to='/ref/:id' style={{ textDecoration: 'none', color: 'black' }}>
     <div className='SliceRefrigerators'style={{justifyContent:'space-around'}}>
       {displayedRefrigerators.map((refrigerator) => (
         <div  className="refrigerator-item">
@@ -26,6 +27,7 @@ const RefrigeratorList = () => {
       </Link> 
       </div> 
     </div>
+    </Link>
   );
 };
 

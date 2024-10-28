@@ -7,6 +7,7 @@ const TvList = () => {
   const displayedTv = Tv.slice(0, 3); 
 
   return (
+    <Link to='/tv/:id' style={{ textDecoration: 'none', color: 'black' }}>
     <div className='SliceTv'style={{justifyContent:'space-around'}}>
       {displayedTv.map((tv) => (
         <div>
@@ -23,6 +24,7 @@ const TvList = () => {
       </Link> 
       </div> 
     </div>
+    </Link>
   );
 };
 

@@ -7,6 +7,7 @@ const MobileList = () => {
   const displayedMobiles = Mobile.slice(0, 3);
 
   return (
+    <Link to='/mobile/:id'style={{ textDecoration: 'none', color: 'black' }}>
     <div className='SliceMobile' style={{justifyContent:'space-around'}}>
       {displayedMobiles.map((mobile) => (
         <div>
@@ -19,6 +20,7 @@ const MobileList = () => {
         View All
       </Link></div>
     </div>
+    </Link>
   );
 };
 

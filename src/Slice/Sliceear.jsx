@@ -7,6 +7,7 @@ const EarbudsList = () => {
   const displayedEarbuds = Earbuds.slice(0, 3);
 
   return (
+    <Link to='/earbuds/:id' style={{ textDecoration: 'none', color: 'black' }}>
     <div className='SliceEarbuds' style={{justifyContent:'space-around'}}>
       {displayedEarbuds.map((earbud) => (
         <div >
@@ -21,6 +22,7 @@ const EarbudsList = () => {
       </Link>
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -6,6 +6,7 @@ const LaptopList = () => {
   const displayedLaptop = Laptop.slice(0, 3);
 
   return (
+    <Link to='/laptop/:id' style={{ textDecoration: 'none', color: 'black' }}>
     <div className='SliceLaptop' style={{justifyContent:'space-around'}}>
       {displayedLaptop.map((laptop) => (
         <div key={laptop.id}>
@@ -20,6 +21,7 @@ const LaptopList = () => {
       </div>
       
     </div>
+    </Link>
   );
 };
 
