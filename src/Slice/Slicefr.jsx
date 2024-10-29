@@ -21,7 +21,7 @@ const RefrigeratorList = () => {
           <p>Energy Star Rating: {refrigerator.EnergyStar}</p>
         </div>
       ))}
-      <div style={{justifyContent:'end', marginTop:'460px'}}>
+      <div style={{justifyContent:'end', marginTop:'560px'}}>
       <Link to='/refrigerators'>
         View All
       </Link> 

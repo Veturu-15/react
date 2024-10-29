@@ -16,7 +16,7 @@ const MobileList = () => {
          
         </div>
       ))}
-      <div style={{justifyContent:'end', marginTop:'160px'}}><Link to='/mobile'>
+      <div style={{justifyContent:'end', marginTop:'260px'}}><Link to='/mobile'>
         View All
       </Link></div>
     </div>

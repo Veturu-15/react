@@ -18,7 +18,7 @@ const TvList = () => {
           <p>Price: ₹{tv.price}</p>
         </div>
       ))}
-      <div style={{justifyContent:'end', marginTop:'260px'}}>
+      <div style={{justifyContent:'end', marginTop:'320px'}}>
       <Link to='/tv'>
         View All
       </Link> 

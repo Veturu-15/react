@@ -14,7 +14,7 @@ const LaptopList = () => {
           <img src={laptop.Image} alt={laptop.title} style={{height:'400px', width:'300px'}} />
         </div>
       ))}
-      <div style={{justifyContent:'end', marginTop:'260px'}}>
+      <div style={{justifyContent:'end', marginTop:'460px'}}>
       <Link to='/laptop'>
         View All
       </Link>  

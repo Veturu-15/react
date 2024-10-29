@@ -16,7 +16,7 @@ const EarbudsList = () => {
           <p>Color: {earbud.Colour}</p>
         </div>
       ))}
-      <div style={{justifyContent:'end', marginTop:'160px'}}>
+      <div style={{justifyContent:'end', marginTop:'260px'}}>
       <Link to='/earbuds'>
         View All
       </Link>
