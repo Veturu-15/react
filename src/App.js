@@ -18,6 +18,7 @@ import Laptopdetails from './Pages/Details/Laptopdetails';
 import Eardetails from './Pages/Details/Eardetails';
 import Tvdetails from './Pages/Details/Tvdetails';
 import Refdetails from './Pages/Details/Refdetails';
+import Add from './Pages/Add';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/ref/:id' element={<Refdetails />}/>
           <Route path='/profile' element={<Profile />} />
           <Route path='/logout' element={<Logout />} />
+          <Route path='/Add' element={<Add/>}/>
           <Route path='*' element={<Data />} />
         </Routes>
       </Router>

@@ -7,6 +7,7 @@ export const ref=[
         Configuration:	"Single",
         EnergyStar:	"3 Star",
         images:"https://m.media-amazon.com/images/I/51ag1wgRdBL._SY606_.jpg",
+        price:34500,
     },
     {
         id:2,

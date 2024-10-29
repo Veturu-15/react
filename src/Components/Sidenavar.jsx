@@ -42,7 +42,7 @@ function Sidenavar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to='/' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
+          <NavLink to='/Add' className={({ isActive }) => isActive ? 'nav active' : 'nav'}>
           <FaShoppingCart />Add  to Cart
           </NavLink>
         </li>

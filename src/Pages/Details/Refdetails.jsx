@@ -1,13 +1,34 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Refrigerator from '../../Data/Refrigerator'; // Ensure this path is correct
+import Refrigerator from '../../Data/Refrigerator'; 
+import Sidenavar from '../../Components/Sidenavar';
+import { Row } from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
+import Header from '../../Components/Header';
+
 
 function Refdetails() {
-    const { id } = useParams(); // Get the ID from the URL
-    const re = Refrigerator.find((e) => e.id === parseInt(id)); // Correctly find the refrigerator by ID
+    const { id } = useParams(); 
+    const re = Refrigerator.find((e) => e.id === parseInt(id)); 
     return (
         <div>
-            single
+           <Row>
+            <Col sm={2}>
+            <Sidenavar/>
+            </Col>
+            <Col sm={10}>
+            <Header/>
+            <div>
+                <img src={re.images} alt="" />
+                <p>Brand:{re.Brand}</p>
+                <p>Capacity:{re.Capacity}</p>
+                <p> ProductDimensions:{re. ProductDimensions}</p>
+                <p>Configuration:{re.Configuration}</p>
+                <p>EnergyStar:{re.EnergyStar}</p>
+                <p>price:{re.price}</p>
+            </div>
+            </Col>
+           </Row>
         </div>
         
     );

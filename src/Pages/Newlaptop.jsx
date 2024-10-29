@@ -1,6 +1,7 @@
 import React from 'react';
 import Laptop from '../Data/Laptop';
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 function Newlaptop() {
   return (
     <div  style={{display:'flex', flexWrap:'wrap'}}>
@@ -18,6 +19,9 @@ function Newlaptop() {
                             <p>CPUModel:{item.CPUModel}</p>
                             <p>RAMMemoryInstalledSize:{item.RAMMemoryInstalledSize}</p>
                             <p>price{item.price}</p>
+                            <Button className='btn btn-warning' style={{ marginTop: '10px' }}>
+                                    Add to cart
+                          </Button>
                         </div>
                     </Link>
                 )

@@ -50,7 +50,7 @@ function Header() {
           </Box>
 
           {/* Cart Button */}
-          <Link to='/' className='new'>
+          <Link to='/Add' className='new'>
             <IconButton color="inherit">
               <Badge badgeContent={cartCount} color="error">
                 <ShoppingCartIcon />

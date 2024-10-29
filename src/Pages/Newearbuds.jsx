@@ -1,6 +1,7 @@
-import React from 'react'
-import Earbuds from '../Data/Earbuds'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Earbuds from '../Data/Earbuds';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 function Newearbuds() {
   return (
     <div style={{display:'flex', flexWrap:'wrap'}}>
@@ -18,7 +19,11 @@ function Newearbuds() {
                             <p>FormFactor:{item.FormFactor}</p>
                             <p>Headphones:{item.Headphones}</p>
                             <p>price:{item.price}</p>
+                            <Button className='btn btn-warning' style={{ marginTop: '10px' }}>
+                                    Add to cart
+                          </Button>
                         </div>
+                       
                     </Link>
                 )
             })
