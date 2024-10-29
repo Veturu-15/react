@@ -1,28 +1,30 @@
-import React from 'react';
-import { Earbuds as EarbudsData } from '../Data/Earbuds';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-function EarbudsList() {
-    return (
-        <Link to='/earbuds/:id' style={{ textDecoration: 'none', color: 'black' }}>
-        <div className='earbuds' style={{display:'flex', flexWrap:'wrap',gap:'3%',padding:'3px'}}>
-            {EarbudsData.map((item) => (
-                <div className='new'  style={{border:'2px solid black', margin:'10px', color:'black'}}> 
-                    <img src={item.imgaes} alt='' style={{height:'350px', width:'300px'}}/>
-                    <h2>Brand: {item.Brand}</h2>
-                    <p>Colour:{item.Colour}</p>
-                    <p>EarPlacement:{item.EarPlacement}</p>
-                    <p>FormFactor:{item.FormFactor}</p>
-                    <p>Headphones:{item.Headphones}</p>
-                    <p>Price: {item.price}</p>
-                    <Button className='btn btn-warning'>
-                        Add to cart
-                    </Button>
-                </div>
-            ))}
-        </div>
-        </Link>
-    );
+import React from 'react'
+import Earbuds from '../Data/Earbuds'
+import { Link } from 'react-router-dom'
+function Newearbuds() {
+  return (
+    <div style={{display:'flex', flexWrap:'wrap'}}>
+        {
+            Earbuds.map((item)=>{
+                return(
+                    <Link to={`/earbuds/${item.id}`} style={{textDecoration:'none' ,color:'black'}}>
+                        <div>
+                            <img src={item.imgaes} alt=""style={{height:'300px', width:'200px', border:'1px solid black', padding:'5%', gap:'5%', margin:'50px'}} />
+                        </div>
+                        <div style={{marginLeft:"90px"}}>
+                            <p>Brand:{item.Brand}</p>
+                            <p>Colour:{item.Colour}</p>
+                            <p>EarPlacement:{item.EarPlacement}</p>
+                            <p>FormFactor:{item.FormFactor}</p>
+                            <p>Headphones:{item.Headphones}</p>
+                            <p>price:{item.price}</p>
+                        </div>
+                    </Link>
+                )
+            })
+        }
+    </div>
+  )
 }
 
-export default EarbudsList;
+export default Newearbuds

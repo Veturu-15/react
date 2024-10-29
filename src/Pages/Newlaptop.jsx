@@ -1,32 +1,30 @@
 import React from 'react';
-import { Laptop as LaptopData } from '../Data/Laptop';
-import { Button } from 'react-bootstrap';
+import Laptop from '../Data/Laptop';
 import { Link } from 'react-router-dom';
-
-function LaptopList() {
-    return (
-        <Link to='/laptop/:id'style={{ textDecoration: 'none', color: 'black' }}>
-        <div className='laptop'style={{display:'flex', flexWrap:'wrap',gap:'3%',padding:'3px'}}>
-            {LaptopData.map((item) => (
-                <div className='new'  style={{border:'2px solid black', margin:'10px', color:'black'}}>
-                    <p>ID: {item.id}</p> 
-                    <img src={item.Image} alt=''style={{height:'350px', width:'300px'}} />
-                    <h2>Brand: {item.Brand}</h2>
-                    <p>ModelName:{item.ModelName}</p>
-                    <p>ScreenSize:{item.ScreenSize}</p>
-                    <p>ColourSilver:{item.ColourSilver}</p>
-                    <p>HardDiskSize:{item.HardDiskSize}</p>
-                    <p>CPUModel:{item.CPUModel}</p>
-                    <p>RAMMemoryInstalledSize:{item.RAMMemoryInstalledSize}</p>
-                    <p >Price: {item.price}</p>
-                    <Button className='btn btn-warning'>
-                        Add to cart
-                    </Button>
-                </div>
-            ))}
-        </div>
-        </Link>
-    );
+function Newlaptop() {
+  return (
+    <div  style={{display:'flex', flexWrap:'wrap'}}>
+        {
+            Laptop.map((item)=>{
+                return(
+                    <Link to={`/Laptop/${item.id}`} style={{textDecoration:'none' ,color:'black'}} >
+                        <div style={{color:'black', marginLeft:"150px"}}>
+                            <img src={item.Image} alt="" style={{height:'300px', width:'200px', border:'1px solid black', padding:'5%', gap:'5%', margin:'50px'}} />
+                            <p>Brand: {item.Brand}</p>
+                            <p>ModelName: {item.ModelName}</p>
+                            <p>ScreenSize: {item.ScreenSize}</p>
+                            <p>ColourSilver:{item.ColourSilver}</p>
+                            <p>HardDiskSize:{item.HardDiskSize}</p>
+                            <p>CPUModel:{item.CPUModel}</p>
+                            <p>RAMMemoryInstalledSize:{item.RAMMemoryInstalledSize}</p>
+                            <p>price{item.price}</p>
+                        </div>
+                    </Link>
+                )
+            })
+        }
+    </div>
+  )
 }
 
-export default LaptopList;
+export default Newlaptop

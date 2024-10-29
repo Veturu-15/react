@@ -1,24 +1,26 @@
 import React from 'react';
-import { Mobile as MobileData } from '../Data/Mobile';
-import { Button } from 'react-bootstrap';
+import Mobile from '../Data/Mobile';
 import { Link } from 'react-router-dom';
-function MobileList() {
-    return (
-        <Link to='/mobile/:id' style={{ textDecoration: 'none', color: 'black' }}>
-        <div className='mobile' style={{display:'flex', flexWrap:'wrap',gap:'3%',padding:'3px'}}>
-            {MobileData.map((item) => (
-                <div className='new'  style={{border:'2px solid black', margin:'10px'}}>
-                    <h2 style={{color:'black'}}>Title: {item.title}</h2>
-                    <img src={item.Image} alt={item.title} style={{height:'350px', width:'300px'}} />
-                    <p className='hero' style={{color:'black'}}>Price: {item.price}</p>
-                    <Button className='btn btn-warning'>
-                        Add to cart
-                    </Button>
-                </div>
-            ))}
-        </div>
-        </Link>
-    );
+function Newmobile() {
+  return (
+    <div className='hello' style={{display:'flex', flexWrap:'wrap'}}>
+        {
+            Mobile.map((item)=>{
+                return(
+                    <Link to={`/mobile/${item.id}`} style={{textDecoration:'none' ,color:'black'}} >
+                         <div>
+                            <img src={item.Image} alt="" style={{height:'300px', width:'200px', border:'1px solid black', padding:'5%', gap:'5%', margin:'50px'}} />
+                            </div>
+                        <div className='mob' style={{color:'black', marginLeft:"50px"}}>
+                            <p>Brand:  {item.title}</p>
+                            <p> price:  {item.price}</p>
+                        </div>
+                    </Link>
+                )
+            })
+        }
+    </div>
+  )
 }
 
-export default MobileList;
+export default Newmobile

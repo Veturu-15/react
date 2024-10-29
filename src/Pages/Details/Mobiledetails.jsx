@@ -10,14 +10,19 @@ function Mobiledetails() {
     const { id } = useParams();
     const mobile = Mobile.find((e) => e.id === Number(id));
     return (
-        <div >
+        <div  className='container-fluid'>
             <Row>
                 <Col sm={2}>
                 <Sidenavar/>
                 </Col>
                 <Col sm={10}>
                 <Header/>
-                    
+                <div>
+                        <img src={mobile.Image}alt="" />
+                        <p>{mobile.title}</p>
+                        <p>{mobile.price}</p>
+                </div>
+            
                 </Col>
             </Row>
         </div>
