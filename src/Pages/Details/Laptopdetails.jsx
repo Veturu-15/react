@@ -20,13 +20,14 @@ function Laptopdetails() {
         <div>
           <img src={item.Image} alt="" />
           <p>Brand: {item.Brand}</p>
-                            <p>ModelName: {item.ModelName}</p>
-                            <p>ScreenSize: {item.ScreenSize}</p>
-                            <p>ColourSilver: {item.ColourSilver}</p>
-                            <p>HardDiskSize: {item.HardDiskSize}</p>
-                            <p>CPUModel: {item.CPUModel}</p>
-                            <p>RAMMemoryInstalledSize:  {item.RAMMemoryInstalledSize}</p>
-                            <p>price: {item.price}</p>
+                              <p>ModelName: {item.ModelName}</p>
+                              <p>ScreenSize: {item.ScreenSize}</p>
+                              <p>ColourSilver: {item.ColourSilver}</p>
+                              <p>HardDiskSize: {item.HardDiskSize}</p>
+                              <p>CPUModel: {item.CPUModel}</p>
+                              <p>RAMMemoryInstalledSize:  {item.RAMMemoryInstalledSize}</p>
+                              <p>price: {item.price}</p>
+                              <button className='btn btn-warning'>Add to cart</button>
         </div>
         </Col>
       </Row>

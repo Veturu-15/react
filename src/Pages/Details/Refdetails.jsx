@@ -26,6 +26,7 @@ function Refdetails() {
                 <p>Configuration:{re.Configuration}</p>
                 <p>EnergyStar:{re.EnergyStar}</p>
                 <p>price:{re.price}</p>
+                <button className='btn btn-warning'>Add to cart</button>
             </div>
             </Col>
            </Row>

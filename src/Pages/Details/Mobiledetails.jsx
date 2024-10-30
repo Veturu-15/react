@@ -18,9 +18,10 @@ function Mobiledetails() {
                 <Col sm={10}>
                 <Header/>
                 <div>
-                        <img src={mobile.Image}alt="" />
+                        <img src={mobile.Image}alt="" height={'300px'} />
                         <p>{mobile.title}</p>
                         <p>{mobile.price}</p>
+                        <button className='btn btn-warning'>Add to cart</button>
                 </div>
             
                 </Col>

@@ -6,7 +6,7 @@ import Header from '../../Components/Header';
 import Sidenavar from '../../Components/Sidenavar';
 function Tvdetails() {
     const {id} = useParams();
-    const tv = Tv.find((e) => e.id === parseInt(e.id));
+    const tv = Tv.find((e) => e.id === parseInt(id));
   return (
     <div>
       <Row>
@@ -25,6 +25,7 @@ function Tvdetails() {
           <p>AspectRatio:{tv.AspectRatio}</p>
           <p>ProductDimensions:{tv.ProductDimensions}</p>
           <p>price: {tv.price}</p>
+          <button className='btn btn-warning'>Add to cart</button>
         </div>
         </Col>
       </Row>

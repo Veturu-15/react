@@ -25,7 +25,7 @@ function Eardetails() {
             <p>FormFactor: {item.FormFactor}</p>
             <p>Headphones :{item.Headphones }</p>
             <p>price: {item.price}</p>
-            
+            <button className='btn btn-warning'>Add to cart</button>
           </div>
         </Col>
       </Row>
