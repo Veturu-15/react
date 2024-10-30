@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Veturu-15.io/react.git/static/css/main.48decd7b.css",
-    "main.js": "/Veturu-15.io/react.git/static/js/main.30218ae0.js",
+    "main.js": "/Veturu-15.io/react.git/static/js/main.27480f67.js",
     "static/js/453.fc89fcfa.chunk.js": "/Veturu-15.io/react.git/static/js/453.fc89fcfa.chunk.js",
     "index.html": "/Veturu-15.io/react.git/index.html",
     "main.48decd7b.css.map": "/Veturu-15.io/react.git/static/css/main.48decd7b.css.map",
-    "main.30218ae0.js.map": "/Veturu-15.io/react.git/static/js/main.30218ae0.js.map",
+    "main.27480f67.js.map": "/Veturu-15.io/react.git/static/js/main.27480f67.js.map",
     "453.fc89fcfa.chunk.js.map": "/Veturu-15.io/react.git/static/js/453.fc89fcfa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48decd7b.css",
-    "static/js/main.30218ae0.js"
+    "static/js/main.27480f67.js"
   ]
 }
