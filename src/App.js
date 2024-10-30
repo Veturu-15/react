@@ -19,15 +19,14 @@ import Eardetails from './Pages/Details/Eardetails';
 import Tvdetails from './Pages/Details/Tvdetails';
 import Refdetails from './Pages/Details/Refdetails';
 import Add from './Pages/Add';
- // Import your Header component
+ 
 
 function App() {
-  console.log("App is rendering");
   return (
     <div className='Main'> {/* Render the Header here */}
         <Router>
           <Routes>
-            <Route path='/react' element={<Login />} />
+            <Route path='/' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/mobile' element={<Mobile />} />
