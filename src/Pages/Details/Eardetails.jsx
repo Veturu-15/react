@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 import Earbuds from '../../Data/Earbuds';
 
 function Eardetails() {
-  const { id } = useParams();
+  const { id} = useParams();
   const item = Earbuds.find((item) => item.id === parseInt(id));
   return (
     <div className="container-fluid">
