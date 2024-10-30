@@ -19,31 +19,33 @@ import Eardetails from './Pages/Details/Eardetails';
 import Tvdetails from './Pages/Details/Tvdetails';
 import Refdetails from './Pages/Details/Refdetails';
 import Add from './Pages/Add';
+ // Import your Header component
 
 function App() {
+  console.log("App is rendering");
   return (
-    <div className='Main'>
-      <Router>
-        <Routes>
-          <Route path='/react' element={<Login />} />
-          <Route path='/signup' element={<Signup />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/mobile' element={<Mobile />} />
-          <Route path='/mobile/:id' element={<Mobiledetails />} />
-          <Route path='/laptop' element={<Laptop />} />
-          <Route path='/laptop/:id' element={<Laptopdetails />} />
-          <Route path='/earbuds' element={<Earbuds />} />
-          <Route path='/earbuds/:id' element={<Eardetails />} />
-          <Route path='/tv' element={<Tv />} />
-          <Route path='/tv/:id' element={<Tvdetails />} />
-          <Route path='/ref' element={<Refrigerator />} />
-          <Route path='/ref/:id' element={<Refdetails />}/>
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/logout' element={<Logout />} />
-          <Route path='/Add' element={<Add/>}/>
-          <Route path='*' element={<Data />} />
-        </Routes>
-      </Router>
+    <div className='Main'> {/* Render the Header here */}
+        <Router>
+          <Routes>
+            <Route path='/react' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/mobile' element={<Mobile />} />
+            <Route path='/mobile/:id' element={<Mobiledetails />} />
+            <Route path='/laptop' element={<Laptop />} />
+            <Route path='/laptop/:id' element={<Laptopdetails />} />
+            <Route path='/earbuds' element={<Earbuds />} />
+            <Route path='/earbuds/:id' element={<Eardetails />} />
+            <Route path='/tv' element={<Tv />} />
+            <Route path='/tv/:id' element={<Tvdetails />} />
+            <Route path='/ref' element={<Refrigerator />} />
+            <Route path='/ref/:id' element={<Refdetails />} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/logout' element={<Logout />} />
+            <Route path='/Add' element={<Add />} />
+            <Route path='*' element={<Data />} />
+          </Routes>
+        </Router>
     </div>
   );
 }
