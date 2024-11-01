@@ -21,13 +21,12 @@ const RefrigeratorList = () => {
               alt={`${refrigerator.Brand} Refrigerator`} 
               className="refrigerator-image" 
             />
-            <p>Capacity: {refrigerator.Capacity}</p>
-            <p>Energy Star Rating: {refrigerator.EnergyStar}</p>
+            
           </div>
         </Link>
       ))}
       <div style={{ justifyContent: 'end', marginTop: '560px' }}>
-        <Link to='/refrigerators'>
+        <Link to='/ref'>
           View All
         </Link> 
       </div> 

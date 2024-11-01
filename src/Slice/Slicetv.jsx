@@ -16,9 +16,6 @@ const TvList = () => {
           <div>
             <h3>{tv.Brand}</h3>
             <img src={tv.images} alt={tv.Brand} style={{ height: '200px', width: '200px' }} />
-            <p>Screen Size: {tv.ScreenSize}</p>
-            <p>Resolution: {tv.Resolution}</p>
-            <p>Price: ₹{tv.price}</p>
           </div>
         </Link>
       ))}
