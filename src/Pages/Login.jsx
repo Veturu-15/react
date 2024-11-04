@@ -22,13 +22,13 @@ function Login() {
         >
           <input
             type="text"
-            placeholder="Enter Username"
+            placeholder="Username:Ammu"
             onChange={(e) => setUsername(e.target.value)}
           />
           <br /><br />
           <input
             type="password"
-            placeholder="Enter Password"
+            placeholder="password:Ammu123"
             onChange={(e) => setPassword(e.target.value)}
           />
           <br /><br />
