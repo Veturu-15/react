@@ -8,7 +8,7 @@ import { ImProfile } from "react-icons/im";
 
 function Sidenavar() {
   return (
-    <div className='side'>
+    <div className='side' style={{height:'100%'}}>
       <ul>
         <li><h1>Menu</h1></li>
         <li>
