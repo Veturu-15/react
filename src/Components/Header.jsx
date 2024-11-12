@@ -61,7 +61,7 @@ function Header() {
 
           {/* Cart and profile icons */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Link to='/Add'>
+            <Link to='/Add' style={{textDecoration:'none', color:'white'}}>
               <IconButton color="inherit">
                 <Badge badgeContent={cartCount} color="error">
                   <ShoppingCartIcon />
